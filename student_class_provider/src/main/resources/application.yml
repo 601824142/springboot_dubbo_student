@@ -1,0 +1,21 @@
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://47.112.22.169:2181
+  protocol:
+    name: dubbo
+    port: 20880
+
+
+spring:
+    #数据源配置
+  datasource:
+    url: jdbc:mysql://47.112.22.169/student
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  #映射文件的全路径
+  mapper-locations: classpath*:mapper/*.xml
